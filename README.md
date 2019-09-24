@@ -1,1 +1,1 @@
-# JavaScript
+# JavaScript Car Racing Game
