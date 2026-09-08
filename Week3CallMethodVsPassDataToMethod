@@ -1,0 +1,86 @@
+console.log("Hello World");
+
+function sayHello(){
+    return "Hello world";}
+console.log(sayHello());
+
+alert("Hello");
+
+
+
+
+//Define the class
+class Greeter {
+  //Define a method inside the class
+  sayHello(){
+    return "Hello World";
+  }
+}
+//Create an instance of the class
+const myGreeter = new Greeter();
+//Call the method using dot notation
+console.log(myGreeter.sayHello()); 
+
+
+
+
+
+class Greeter {
+    // A method that takes a name parameter
+    sayHelloTo(name) {
+        return `Hello, ${name}!`;
+    }
+}
+const myGreeter = new Greeter();
+// Call the method and pass a name to it
+console.log(myGreeter.sayHelloTo("Alice")); // Output: Hello, Alice!
+
+
+
+
+JAVA:
+//create an instance of the class
+const myGreeter = new Greeter();
+//camm the method using dot notation
+console.log(myGreeter.sayHello());
+
+// 1. Define the class
+class Greeter {
+    // 2. Define a method inside the class
+    // (You must specify that it returns a 'String' and is 'public')
+    public String sayHello() {
+        return "Hello, World!";
+    }
+}
+// How to use it (usually inside your Main program):
+public class Main {
+    public static void main(String[] args) {
+        // 3. Create an instance of the class
+        // (Instead of 'const', you use the Class name as the data type)
+        Greeter myGreeter = new Greeter();
+        // 4. Call the method using dot notation
+        System.out.println(myGreeter.sayHello()); // Output: Hello, World!
+    }
+}
+
+
+JAVA:
+//Define the class
+class Greeter {
+    //Define the method with a String parameter
+    public String sayHelloTo(String name) {
+        // In Java, we use the + sign to combine (concatenate) text
+        return "Hello, " + name + "!";
+    }
+}
+// How to use it:
+public class Main {
+    public static void main(String[] args) {
+        
+        //Create an instance of the class
+        Greeter myGreeter = new Greeter();
+        
+        //Call the method and pass "Alice" into it
+        System.out.println(myGreeter.sayHelloTo("Alice")); // Output: Hello, Alice!
+    }
+}
