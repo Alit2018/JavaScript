@@ -26,3 +26,35 @@ document.getElementById("demo").innerHTML = languague.outcome();
 </script>
 </body>
 </html>
+
+
+back-end:
+/*When a front-end client (like a browser or mobile app) visits 
+http://localhost:3000/api/languages, your back-end server will 
+execute the outcome() function behind the scenes and securely 
+send back the raw text:"JAVA and  Python are the two GREATEST languages!"
+*/
+const express = require('express');
+const app = express();
+const PORT = 3000;
+
+// 1. Your object data stored securely on the server
+const language = {
+  java: "JAVA and ",
+  python: "Python are the two GREATEST languages!",
+  outcome: function() {
+    return this.java + " " + this.python;
+  }
+};
+
+// 2. Your backend API route (Fixed spelling)
+app.get('/api/languages', (req, res) => { 
+  // This sends the computed string across the network to the front-end
+  res.send(language.outcome()); 
+});
+
+// 3. Start the server
+app.listen(PORT, () => {
+  console.log(`Backend server running on http://localhost:${PORT}`);
+});
+
