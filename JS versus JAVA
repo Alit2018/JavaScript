@@ -1,0 +1,24 @@
+It is very interesting that JS ES6+ to this day is the only language that runs natively inside all browsers, 
+alongside HTML5 and CSS3 to create interactive features like pop-ups, animations, live data updates etc. 
+I googled, so funny that in JS it is let, let, const while in J it is var, int and final. 
+When one thing is obsolete in one language, it is not in another :)))
+
+
+public class calculator {
+public int add (int a, int b)
+return (a +b)}
+
+(a, b ) -> a +b
+
+
+function add(a,b){
+return a + b;}
+
+const add = (a,b) => a + b;
+
+funtion greet(name){
+return "Hello" + name;}
+
+const greet = (name) => {return "Hello" + name;}
+
+thus (a,b)->a + b and JS (a.b)=> a+b but this doesn't make them both loosely typed though
