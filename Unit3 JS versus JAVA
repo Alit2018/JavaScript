@@ -3,18 +3,36 @@ alongside HTML5 and CSS3 to create interactive features like pop-ups, animations
 I googled, so funny that in JS it is let, let, const while in J it is var, int and final. 
 When one thing is obsolete in one language, it is not in another :)))
 
+public static class Calculator {
+     public int add (int a, int b){
+           return (a +b);
+     }
+}
+
+public static void main(String[] args) {
+  Calculator calc = new Calculator();
+
+  int sum = calc.add(5,5);
+  System.out.println(sum);
+}
+
+
+
 
 public class calculator {
-public int add (int a, int b)
-return (a +b)}
+     public int add (int a, int b)
+           return (a +b)
+     }
 
 (a, b ) -> a +b
+
 
 
 function add(a,b){
 return a + b;}
 
 const add = (a,b) => a + b;
+
 
 funtion greet(name){
 return "Hello" + name;}
